@@ -81,7 +81,7 @@ public class AddUserActivity extends AppCompatActivity {
         Boolean doctor = phdCheckBox.isChecked();
 
         UserStorage.getInstance().addUser(new User(first_Name,last_Name,e_mail,program, bachelor, master, licentiate, doctor));
-        //UserStorage.getInstance().saveUsers(context);
+        UserStorage.getInstance().saveUsers(context);
 
     }
 }
